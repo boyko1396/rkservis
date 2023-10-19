@@ -106,6 +106,9 @@
   .site__main {
     padding: 0 20rem;
   }
+  body.is-menu-show {
+    overflow: hidden;
+  }
   body.is-menu-show .header__toggle span:nth-child(1) {
     transform: translateY(50%) rotate(-45deg);
   }
