@@ -1,4 +1,5 @@
 @import url('slick.css');
+@import url('fancybox.min.css');
 
 /* root
 =====================*/
@@ -553,6 +554,11 @@ h6,
     display: block;
     width: 60rem;
     height: 60rem;
+    transition: all .4s;
+}
+
+.benefits-card:hover .benefits-card__picture {
+    transform: rotate(360deg);
 }
 
 .benefits-card__head-img {
@@ -791,6 +797,12 @@ h6,
     padding: 30rem;
     background: var(--color-white-dark);
     border-radius: 10rem;
+    transition: all .4s;
+}
+
+.services-card:hover {
+    background: var(--color-blue);
+    color: var(--color-white);
 }
 
 .services-card__head {
@@ -800,12 +812,25 @@ h6,
     padding-bottom: 12rem;
     border-bottom: 1rem solid var(--color-blue);
     margin-bottom: 96rem;
+    transition: all .4s;
+    transition-property: border-color;
+}
+
+.services-card:hover .services-card__head {
+    border-color: var(--color-white);
 }
 
 .services-card__head-title {
     font-size: var(--fs-default);
     color: var(--color-blue);
     font-weight: normal;
+    transition: all .4s;
+    transition-property: color;
+}
+
+.services-card:hover .services-card__head-title,
+.services-card:hover .sevices-card__title {
+    color: var(--color-white);
 }
 
 .services-card__picture {
@@ -835,6 +860,8 @@ h6,
     color: var(--color-blue);
     line-height: 1.3;
     margin: 0 0 16rem 0;
+    transition: all .4s;
+    transition-property: color;
 }
 
 .sevices-card__text {max-width: 454rem;line-height: 1.6;}
@@ -1006,6 +1033,12 @@ h6,
 .license-slider-card__media {
     width: 204rem;
     margin: 0 auto 12rem;
+    display: block;
+    transition: all .4s;
+}
+
+.license-slider-card__media:hover {
+    opacity: .7;
 }
 
 .license-slider-card__picture {

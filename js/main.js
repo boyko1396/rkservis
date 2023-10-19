@@ -1,7 +1,16 @@
+$(document).ready(function () {
+});
+
 $(document).ready(function() {
   // header mobile dropdown
   $('.js-header-nav-toggle').click(function(events) {
     $('body').toggleClass('is-menu-show');
+  });
+
+  // value from 0 to value
+  $('.intro-card__title-count').each(function () {
+    var targetValue = $(this).data('value');
+    animateNumber(0, targetValue, $(this));
   });
 
   // slider slick init
@@ -89,3 +98,12 @@ $(document).ready(function() {
     focusOnSelect: true,
   });
 });
+
+function animateNumber(currentValue, targetValue, element) {
+  if (currentValue < targetValue) {
+    element.text(currentValue);
+    setTimeout(function () {
+      animateNumber(currentValue + 1, targetValue, element);
+    }, 34);
+  }
+}
