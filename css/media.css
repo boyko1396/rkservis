@@ -11,7 +11,21 @@
 }
 
 @media (min-width: 1200px){
-
+  .projects-slider-card__content {
+    background: var(--color-white);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(62rem);
+    transition: all .4s ease;
+  }
+  .projects-slider-card:hover .projects-slider-card__content {
+    padding-right: 20rem;
+    padding-left: 20rem;
+    transform: none;
+    border-radius: 20rem 20rem 0 0;
+  }
 }
 
 @media (max-width: 1199px){

@@ -621,13 +621,24 @@ h6,
     font-weight: 600;
 }
 
+.projects-slider-card {
+    overflow: hidden;
+}
+
+.projects-slider-card__inner {
+    position: relative;
+}
+
 .projects-slider-card__media {
-    margin-bottom: 20rem;
 }
 
 .projects-slider-card__picture {
-    padding-bottom: 59.3%;
+    padding-bottom: 59.3220338983%;
     border-radius: 10rem;
+}
+
+.projects-slider-card__content {
+    padding: 20rem 0 0;
 }
 
 .projects-slider-card__title {
