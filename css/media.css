@@ -328,6 +328,9 @@
   .benefits-card__text {
     max-width: 100%;
   }
+  .projects-slider-card__picture {
+    padding-bottom: 59.3220338983%;
+  }
 }
 
 @media (max-width: 575px){

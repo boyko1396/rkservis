@@ -635,11 +635,8 @@ h6,
     position: relative;
 }
 
-.projects-slider-card__media {
-}
-
 .projects-slider-card__picture {
-    padding-bottom: 59.3220338983%;
+    padding-bottom: 48%;
     border-radius: 10rem;
 }
 
