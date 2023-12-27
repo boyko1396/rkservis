@@ -1154,7 +1154,6 @@ h6,
 
 .news-slider-card__title a:hover {
     color: var(--color-blue);
-    text-decoration: none;
 }
 
 .news-slider-card__title a:before {
